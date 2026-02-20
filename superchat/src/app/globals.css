@@ -1,42 +1,179 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    user-select: none;
+}
+
+:root {
+  --cor-bakground: #11182748;
+  --tamanho-base: 16px;
+}
+
+body {
+  background-color: #111827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+div {
+  padding: 4px;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  border-radius: 6px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.titleCollum {
+  display: inline-block;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;    
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #71757e;
+  background: rgb(31, 44, 59);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+
+.titleBoxSend {
+  display: block;
+  padding: 2px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #71757e;
+  font-size: 10px;
 }
+
+.boxroom {
+  width: "100%";
+  height: calc(100% - 32px);
+  display: "flex";
+  flex-Direction: "column";
+  overflow-y: scroll;
+}
+
+.room {
+  border-radius: 6px;
+  margin-top: 3px;
+  text-align: center;
+  background-color: #444a58;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background-color 250ms linear;
+}
+
+.room:hover {
+  background-color: #b3bed8;
+}
+
+.buttonSend {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #039628;
+  font-size: 8px;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.buttonSend:hover {
+  background-color: #2bbd4f;
+}
+
+.inputMessage {
+  margin-top: 6px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 28px;
+  padding: 8px;
+  text-align: start;
+  box-sizing: border-box;
+}
+
+.boxMessage {
+  padding: 4px;
+  margin-bottom: 6px;
+  background-color: #085a4a;
+  width: 200px;
+}
+
+.boxMessage::after {
+  content: '';
+  position: relative;
+    bottom: 2px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  right: -188px;
+
+  transform: rotate(45deg);
+   /* Posiciona à esquerda */
+  
+ background-color: #085a4a;
+}
+
+.boxMessageOther {
+  padding: 4px;
+  margin-left: 194px;
+  margin-bottom: 6px;
+  background-color: #07132c;
+  width: 200px;
+}
+
+.boxMessageOther::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  left: -8px;
+  bottom: 2px;
+  z-index: 0;
+  transform: rotate(45deg);
+   /* Posiciona à esquerda */
+  
+ background-color: #07132c;;
+}
+
+.nameMessage
+{
+  display: block;
+ color:#8f9ab3;
+ text-transform: uppercase;
+ font-size: 6px;
+  margin-left: 4px;
+}
+
+
+.messageText {
+  display: inline-block;
+  color:#c9c9c9;
+  font-size: 10px;
+}
+
+
+
+
+
+* {
+  scrollbar-width:thin;
+  /* auto | thin | none */
+  scrollbar-color: #161515 #1a1a1a;
+}
+

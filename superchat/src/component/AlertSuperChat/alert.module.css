@@ -1,0 +1,62 @@
+.boxMain {
+    border-radius: 0px;
+    width: 100%;
+    height: 100vh;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+.boxAlert {
+    background-color: #2f426c48;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-flex-align: center;
+    border-radius: 0px;
+    padding: 30px;
+}
+
+.boxAlert_title {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(175, 206, 0);
+    position: relative;
+    -ms-flex-align: center;
+    border-radius: 0px;
+    padding: 4px;
+}
+
+.boxAlert_Message {
+    font-size: 12px;
+    font-weight: bolder;
+    color: rgb(122, 128, 134);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-flex-align: center;
+    border-radius: 0px;
+    padding: 30px;
+}
+
+.boxAlert_buttonEnter {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: rgb(31, 87, 140);
+    transition: background-color 250ms linear;
+    color: rgb(161, 186, 209);
+}
+
+.boxAlert_buttonEnter:hover {
+    background-color: rgb(48, 123, 192);
+}

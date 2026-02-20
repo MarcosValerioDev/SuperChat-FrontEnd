@@ -1,0 +1,116 @@
+.boxMain{
+border-radius: 0px;
+width: 100%;
+height: 100vh;
+max-width: 500px;
+display: flex;
+flex-direction: row;
+align-items: center;
+-ms-flex-align: center;
+}
+
+.boxLogin{
+    background-color:#2f426c48;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-flex-align: center;
+    border-radius: 0px;
+    padding: 30px;
+}
+
+.boxLogin_title{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(122, 128, 134);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-flex-align: center;
+    border-radius: 0px;
+    padding: 30px;
+}
+
+
+.boxLogin_input{
+    width: 100%;
+    max-width: 350px;
+    font-size: 10px;
+    font-weight: bolder;
+    color: rgb(86, 91, 96);
+    position: block;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxLogin_nick{
+    width: 100%;
+    font-size: 10px;
+    font-weight: bolder;
+    color: rgb(152, 162, 172);
+    position: block;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.boxLogin_inputNick{
+    width: 100%;
+    font-size: 10px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 2px;
+    color: rgb(102, 117, 128);
+    position: block;
+    text-align: left;
+    margin-bottom: 2px;   
+}
+
+/* Standard syntax for modern browsers */
+.boxLogin_inputNick::placeholder {
+ 
+     color: #adb7c8;
+}
+
+/* WebKit, Blink, Edge (Chrome, Safari, Opera 15+) */
+.boxLogin_inputNick::-webkit-input-placeholder {
+  color: #adb7c8;
+}
+
+/* Mozilla Firefox 19+ */
+.boxLogin_inputNick::-moz-placeholder {
+    color: #adb7c8;
+}
+
+/* Mozilla Firefox 4-18 */
+.boxLogin_inputNick::-moz-placeholder {
+    color: #adb7c8;
+}
+
+/* Internet Explorer 10-11 */
+.boxLogin_inputNick::-ms-input-placeholder {
+   color: #adb7c8;
+}
+
+.boxLogin_buttonEnter{
+    cursor: pointer;
+ border: none;
+ outline: none;
+ padding: 4px;
+ font-size: 10px;
+ font-weight: bolder;
+ background-color: rgb(31, 87, 140);
+ transition: background-color 250ms linear;
+ color: rgb(161, 186, 209);
+}
+
+.boxLogin_buttonEnter:hover{
+ background-color: rgb(48, 123, 192);
+}
+

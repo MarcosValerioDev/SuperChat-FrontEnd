@@ -43,7 +43,6 @@ export default function SuperChatView({ userId, nickName }) {
       //  if (prev.length > 500) return [...prev.slice(-500), event.data];
       const msgData = JSON.parse(event.data);
       setMessages((prev) => [...prev, msgData]);
-      return next;
     };
 
     socket.onerror = (err) => {
@@ -93,7 +92,7 @@ export default function SuperChatView({ userId, nickName }) {
       backgroundColor: "#111827",
       padding: "1%",
       display: "flex",
-      flexdDirection: "row",
+      flexDirection: "row",
       alignItems: "center",
       justifyContent: "center",
       flexWrap: "wrap",
@@ -104,8 +103,7 @@ export default function SuperChatView({ userId, nickName }) {
         width: "100%",
         height: "calc(100% - 100px)",
         display: "flex",
-        flexdDirection: "colum",
-
+        flexDirection: "row",
       }}>
         <div style={{
           width: "200px",

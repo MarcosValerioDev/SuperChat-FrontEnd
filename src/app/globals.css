@@ -54,10 +54,10 @@ div {
 }
 
 .boxroom {
-  width: "100%";
+  width: 100%;
   height: calc(100% - 32px);
-  display: "flex";
-  flex-Direction: "column";
+  display: flex;
+  flex-direction: column;
   overflow-y: scroll;
 }
 
